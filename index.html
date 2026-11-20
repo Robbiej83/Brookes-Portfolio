@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Brooke Jordan Photography</title>
+
+<style>
+
+:root{
+    --primary:#ffb347;
+    --dark:#111;
+    --light:#f8f9fa;
+    --text:#333;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Segoe UI, Arial, sans-serif;
+    background:var(--light);
+    color:var(--text);
+    line-height:1.6;
+}
+
+/* ---------- NAV ---------- */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(0,0,0,0.95);
+    padding:1rem;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap:2rem;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:var(--primary);
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+    height:85vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("images/Hero.JPG");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:800px;
+    padding:1rem;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:1rem;
+}
+
+.hero p{
+    font-size:1.3rem;
+    margin-bottom:2rem;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    border-radius:5px;
+    background:var(--primary);
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn:hover{
+    opacity:0.9;
+}
+
+/* ---------- GENERAL ---------- */
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:5rem 1.5rem;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:2rem;
+}
+
+/* ---------- ABOUT ---------- */
+
+.about{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+/* ---------- FEATURED ---------- */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.photo-card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.photo-card:hover{
+    transform:translateY(-4px);
+}
+
+.photo-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    display:block;
+}
+
+.photo-text{
+    padding:1rem;
+}
+
+/* ---------- PORTFOLIO CATEGORIES ---------- */
+
+.categories{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.category{
+    background:white;
+    padding:2rem;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* ---------- CONTACT ---------- */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin-bottom:1rem;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:2rem;
+}
+
+footer p{
+    margin-bottom:0.5rem;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.4rem;
+    }
+
+    .hero p{
+        font-size:1.1rem;
+    }
+
+    nav ul{
+        gap:1rem;
+        flex-wrap:wrap;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#featured">Featured</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Brooke Jordan Photography</h1>
+
+<p>
+Capturing sunsets, landscapes, wildlife
+and the beauty of nature.
+</p>
+
+<a href="#featured" class="btn">
+View Photography
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2>About Brooke</h2>
+
+<div class="about">
+
+<p>
+Hi, I'm Brooke.
+</p>
+
+<br>
+
+<p>
+I'm a 13-year-old photography enthusiast from Northern Ireland
+with a passion for sunsets, landscapes,
+nature and wildlife photography.
+</p>
+
+<br>
+
+<p>
+I really appreciate the beauty of the natural world around me and I love capturing it.
+I belive that nature is one if the best sources of inspiration and happiness and I captue it to share it with the world.
+Not much people are actually interested in photography or my photos so I want to try make more people realise how beautiful
+the world is outside of social media.
+</p>
+
+<br>
+
+<p>
+I like to get out and explore as much as possible but school and the weather can sometimes get in the way.
+Most of my photos are taken with my Google Pixel 9A phone camera but I also use a Nikon coolpix B500 camera when possible.
+</p>
+
+<br>
+
+<p>
+    Here are some of my favourite quotes:
+</p>
+<p>
+    "Sometimes, the hardest thing to appreciate is the life you're too exhausted to enjoy." - Anonymous
+</p>
+<p>    
+    "Listen to the wind, it talks. Listen to the silence, it speaks. Listen to your heart, it knows." - Native American Proverb
+</p>    
+<p>
+    "Listen to your gut not your friends" - Anonymous
+</p>
+<p>   
+    “Life is not a problem to be solved, but a reality to be experienced.” — Soren Kierkegaard  \   
+</p>
+
+</div>
+
+<section id="featured">
+
+<h2>Featured Photography</h2>
+
+<div class="gallery">
+
+<div class="photo-card">
+<img src="images/hero.jpg" alt="Sunset photograph">
+<div class="photo-text">
+<h3>Signature Sunset</h3>
+<p>One of Brooke's favourite photographs.</p>
+</div>
+</div>
+
+<div class="photo-card">
+<img src="images/portrush-beach-sunset.jpg" alt="Sunset over Portrush beach">
+<div class="photo-text">
+<h3>Portrush Beach Sunset</h3>
+<p>North Coast photography.</p>
+</div>
+</div>
+
+<div class="photo-card">
+<img src="images/devils-thumb-lake.jpg" alt="Mountain lake">
+<div class="photo-text">
+<h3>Devil's Thumb Lake</h3>
+<p>Landscape photography.</p>
+</div>
+</div>
+
+<div class="photo-card">
+<img src="images/peace-bridge-derry.jpg" alt="Peace Bridge Derry">
+<div class="photo-text">
+<h3>Peace Bridge</h3>
+<p>Local landmark photography.</p>
+</div>
+</div>
+
+<div class="photo-card">
+<img src="images/bella.jpg" alt="Dog portrait">
+<div class="photo-text">
+<h3>Bella</h3>
+<p>Animal photography.</p>
+</div>
+</div>
+
+<div class="photo-card">
+<img src="images/portrush-view.jpg" alt="Portrush coastline">
+<div class="photo-text">
+<h3>Portrush View</h3>
+<p>Coastal scenery.</p>
+</div>
+</div>
+
+<div class="photo-card">
+<img src="images/chris-boat.jpg" alt="Boat at waterside">
+<div class="photo-text">
+<h3>Chris' Boat</h3>
+<p>Waterfront photography.</p>
+</div>
+</div>
+
+<div class="photo-card">
+<img src="images/inishowen100.png" alt="Landscape view">
+<div class="photo-text">
+<h3>Inishowen</h3>
+<p>Irish landscape photography.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Photography Highlights</h2>
+
+<div class="gallery">
+
+<div class="photo-card">
+<img src="images/derry-walls.jpg">
+<div class="photo-text">
+<h3>Derry Walls</h3>
+<p>Historic architecture.</p>
+</div>
+</div>
+
+<div class="photo-card">
+<img src="images/drumahoe-old-bridge.png">
+<div class="photo-text">
+<h3>Drumahoe Old Bridge</h3>
+<p>Local heritage photography.</p>
+</div>
+</div>
+
+<div class="photo-card">
+<img src="images/crescent-link-urban-decay.jpg">
+<div class="photo-text">
+<h3>Urban Decay</h3>
+<p>Exploring changing urban spaces.</p>
+</div>
+</div>
+
+<div class="photo-card">
+<img src="images/grainan-fort-view.jpg">
+<div class="photo-text">
+<h3>Grianan Fort</h3>
+<p>Historic Irish landscape.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<h2>Portfolio Collections</h2>
+
+<div class="categories">
+
+<div class="category">
+<h3>Sunsets</h3>
+<p>Colourful evening skies and golden-hour photography.</p>
+</div>
+
+<div class="category">
+<h3>Nature & Wildlife</h3>
+<p>Animals, birds and the natural environment.</p>
+</div>
+
+<div class="category">
+<h3>Landscapes</h3>
+<p>Mountains, lakes, countryside and scenery.</p>
+</div>
+
+<div class="category">
+<h3>Travel</h3>
+<p>Photography from adventures at home and abroad.</p>
+</div>
+
+<div class="category">
+<h3>Coastal</h3>
+<p>Beaches, sea views and coastal locations.</p>
+</div>
+
+<div class="category">
+<h3>Urban</h3>
+<p>Architecture, bridges and city photography.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="contact">
+
+<p>
+Thank you for visiting Brooke Jordan Photography.
+</p>
+
+<p>
+More photographs and projects will be added soon.
+</p>
+
+</div>
+
+<section>
+
+<h2>Portfolio At A Glance</h2>
+
+<div class="categories">
+
+<div class="category">
+<h3>30+</h3>
+<p>Photographs</p>
+</div>
+
+<div class="category">
+<h3>6</h3>
+<p>Collections</p>
+</div>
+
+<div class="category">
+<h3>3</h3>
+<p>Countries & Regions</p>
+</div>
+
+<div class="category">
+<h3>∞</h3>
+<p>Future Adventures</p>
+</div>
+
+</div>
+
+</section>
+</section>
+
+<footer>
+
+<p>
+&copy; 2026 Brooke Jordan Photography
+</p>
+
+<p>
+All photographs remain the intellectual property
+of Brooke Jordan.
+</p>
+
+<p>
+Please do not reproduce, redistribute or use any image
+without permission.
+</p>
+
+</footer>
+
+</body>
+</html>
